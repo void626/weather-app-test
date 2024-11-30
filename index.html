@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather app</title>
+  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel="shortcut icon" href="src/assets/shortcut-icon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="input-container">
+      <div class="search-mode">
+        <button class="mode-button city active" data-mode="city">
+          Name
+        </button>
+        <button class="mode-button coords" data-mode="coords">
+          Coords
+        </button>
+      </div>
+      <div class="coords-search">
+        <input class="coords-search-input" type="number" id="latitude" placeholder="Latitude" min="-90" max="90">
+        <input class="coords-search-input" type="number" id="longitude" placeholder="Longitude" min="-180" max="180">
+      </div>
+      <div class="city-search active">
+        <input class="city-search-input" type="text" id="city-name" placeholder="City name">
+      </div>
+      <button class="show-weather" id="show-weather">
+        <img src="src/assets/find-icon.png" width="30px">
+      </button>
+      <button class="show-loc-weather" id="show-loc-weather">
+        My location
+      </button>
+    </div>
+    <div class="widget-container" id="widget-container">
+      <div class="weather-widget start appear" id="start-widget">
+        <p>Enter the city name or coordinates to see the weather in this location.</p>
+        <p>You can also see the weather in your location.</p>
+        <img src="src/assets/nerd-face.png">
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="src/index.js"></script>
+  <!-- <script src="src/index.js"></script>
+  <script src="src/api.js"></script>
+  <script src="src/apikey.js"></script>
+  <script src="src/map.js"></script>
+  <script src="src/scroll.js"></script>
+  <script src="src/validation.js"></script>
+  <script src="src/widget.js  "></script> -->
+</body>
+
+</html>
