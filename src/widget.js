@@ -11,6 +11,7 @@ export function createStartWidget() {
     <p>Enter the city name or coordinates to see the weather in this location.</p>
     <p>You can also see the weather in your location.</p>
     <img src="src/assets/nerd-face.png">
+    <p>Ебал в рот гитхаб пейджес</p>
     `;
 
     widgetContainer.appendChild(widget);
